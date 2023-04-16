@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 20px 200px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App .board {
+  width: 350px;
+  height: 500px;
+  background: #979797;
+  border-radius: 20px;
 }
+
+.App .board .board__title {
+  font-size: 30px;
+  padding: 10px;
+  border: 2px solid black;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.App .board .item {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  background: #e1e1e1;
+  cursor: grab;
+}
+
+.App .board .item:hover {
+  cursor: pointer;
+  background: #ffffff;
+  transition: 0.7s;
+}
+
+/* .App .todos {
+  padding-top: 20px;
+}
+
+.App .todos li{
+  list-style: none;
+  padding: 10px;
+  background: #ffffff;
+  margin: 10px;
+  border-radius: 30px;
+  transition: font-size 0.5s;
+}
+
+.App .todos li:hover {
+  font-size: 18px;
+  background: #dedddd;
+  transition: 0.6s;
+  cursor: pointer;
+} */
+
+/* .App .todos .todo {
+  background: rgba(255, 22, 22, 0.692);
+  color: #ffffff;
+}
+
+.App .todos .progress {
+  background: rgb(255, 156, 50);
+}
+
+.App .todos .done {
+  background: rgb(17, 255, 0);
+} */
